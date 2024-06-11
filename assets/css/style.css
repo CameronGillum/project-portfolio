@@ -27,7 +27,9 @@ section {
         background-color: var(--accent);
         color: var(--accent-text);
         padding: 20px 0;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .header-content {
@@ -79,16 +81,12 @@ section {
 /* End of Navbar */
 
 /* Start of Project-Card */
-    .project-link {
-        text-decoration: none;
-    }
-
     .projects-container {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-    }
+    }    
 
     .project-card {
         background-color: var(--accent-borders);
@@ -99,6 +97,10 @@ section {
         width: 300px;
         box-sizing: border-box;
         transition: transform 0.3s;
+    }
+
+    .project-card a {
+        text-decoration: none;
     }
 
 /* Card hover scale */
@@ -114,6 +116,10 @@ section {
         max-width: 100%;
         border-radius: 8px;
         margin: 10px 0;
+    }
+
+    .project-card p {
+        flex-grow: 1;
     }
 /* End of Project-Card */
 
