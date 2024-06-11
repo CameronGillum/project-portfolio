@@ -79,6 +79,10 @@ section {
 /* End of Navbar */
 
 /* Start of Project-Card */
+    .project-link {
+        text-decoration: none;
+    }
+
     .projects-container {
         display: flex;
         flex-wrap: wrap;
